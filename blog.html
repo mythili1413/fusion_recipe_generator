@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Fusion Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff4f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b22222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .blog-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .blog-post {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .blog-post:hover {
+            transform: scale(1.02);
+        }
+        .blog-post h2 {
+            color: #b22222;
+        }
+        .blog-post img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #b22222;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: #b22222;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flavour Fusion Blog</h1>
+	    <nav>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="features.html">Features</a></li>
+        		<li><a href="recipes.html">Recipes</a></li>
+        		<li><a href="contact.html">Contact</a></li>
+    		</ul>
+	    </nav>
+    </header>
+    <div class="blog-container">
+        <div class="blog-post">
+            <img src="blog1.jpg" alt="Recipe Innovation">
+            <h2>Exploring New Fusion Flavours</h2>
+            <p>Discover unique combinations that redefine culinary experiences.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="blog2.jpg" alt="Food Science">
+            <h2>The Science Behind Great Tastes</h2>
+            <p>Understanding food chemistry to create mind-blowing dishes.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="blog3.jpg" alt="Healthy Eating">
+            <h2>Healthy Eating with Fusion Cuisine</h2>
+            <p>Learn how to balance flavors while maintaining nutrition.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="blog4.jpg" alt="Culinary Trends">
+            <h2>Top Culinary Trends of the Year</h2>
+            <p>Stay updated with the latest food trends from around the world.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Flavour Fusion</p>
+    </footer>
+</body>
+</html>

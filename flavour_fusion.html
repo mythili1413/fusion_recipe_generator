@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Fusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffcccb;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .feature-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+            animation: slideIn 1s ease-in-out;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+        .recipe-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Flavour Fusion</h1>
+	    <nav>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="features.html">Features</a></li>
+        		<li><a href="recipes.html">Recipes</a></li>
+        		<li><a href="blog.html">Blog</a></li>
+        		<li><a href="contact.html">Contact</a></li>
+    		</ul>
+	    </nav>
+
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h2>Discover Unique and Exciting Fusion Recipes</h2>
+        <p>Let AI generate personalized recipes based on your preferences.</p>
+        <a href="#recipes" class="cta-button">Explore Recipes</a>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="feature-box">
+            <h3>AI Recipe Generator</h3>
+            <p>Create fusion recipes with unique ingredient combinations.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Flavour Pairing Assistant</h3>
+            <p>Discover new ingredients that pair perfectly.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Ingredient Substitutions</h3>
+            <p>Find the best replacements for missing ingredients.</p>
+        </div>
+    </section>
+    
+    <section id="recipes" class="recipes">
+        <h2>Popular Recipes</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h4>Spicy Mango Sushi</h4>
+                <p>A tropical twist on a classic sushi roll.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Recipe 2">
+                <h4>Italian-Korean Fusion Pasta</h4>
+                <p>Kimchi and creamy Alfredo come together beautifully.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Flavour Fusion. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
